@@ -112,7 +112,7 @@ class Student
   
   def self.all_students_in_grade_X(grade)
     sql = <<-SQL
-      SELECT COUNT(*) 
+      SELECT *
       FROM students
       WHERE grade = ?
       ORDER BY students.id
